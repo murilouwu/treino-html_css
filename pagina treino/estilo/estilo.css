@@ -1,0 +1,193 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-image: url(../imagens-menu/fundo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.topo{
+	background: rgb(242,236,233);
+	background: linear-gradient(90deg, rgba(242,236,233,0.70) 0%, rgba(242,236,233,0.20) 72%);
+	
+	display: flex;
+	flex-direction: row;
+}
+.menu{
+	z-index: 1;
+	background-color: #453073;
+	border-radius: 100px;
+	width: 3vw;
+	height: 5vh;
+	margin-top: 2vh;
+	margin-right: 30vw;
+	display: flex;
+	justify-content: center;
+	transition: all 0.25s linear;
+}
+.main{
+	display: flex;
+	flex-direction: row;
+}
+.men{
+	z-index: 0;
+	margin-top: 2vh;
+	margin-left: -8.8vw;
+	position: absolute;
+	border-radius: 50px 0px 0px 50px;
+	background-color: #6C568C;
+	width: 10vw;
+	height: 5vh;
+	display: none;
+}
+.men2{
+	z-index: 0;
+	margin-top: 2vh;
+	margin-left: 1.8vw;
+	position: absolute;
+	border-radius: 0px 50px 50px 0px;
+	background-color: #6C568C;
+	width: 10vw;
+	height: 5vh;
+	display: none;
+}
+#check{
+	position: absolute;
+	opacity: 0;
+}
+.camada{
+ 	margin-top: 1.3vh;
+ 	margin-left: 0.5vw;
+	position: relative;
+	cursor: pointer;
+	display: block;
+	width: 2vw;
+	height: 2vh;
+}
+label span{
+	display: block;
+	position: absolute;
+	border-radius: 30px;
+	width: 80%;
+	height: 0.40vh;
+	background-color: #C8C1D9;
+	transition: 0.35s ease-in-out;
+}
+label span:nth-child(1){
+
+	top: 0px;
+}
+label span:nth-child(2){
+
+	top: 0.9vh;
+}
+label span:nth-child(3){
+
+	top: 1.9vh;
+}
+#check:checked + label span:nth-child(1){
+	transform: rotate(-45deg);
+	top: 8px;
+}
+#check:checked + label span:nth-child(2){
+
+	opacity: 0;
+}
+#check:checked + label span:nth-child(3){
+	transform: rotate(45deg);
+	top: 8px;
+}
+.bot{
+	font-size: 2.3vh;
+	font-family: Comic Sans MS;
+	margin-top: 3vh;
+}
+.logo{
+	width: auto;
+	height: 10vh;
+ 
+	margin-left: 8vw;
+	margin-right: 30vw;
+}
+.logo:hover{
+	height: 11vh;
+	border-radius: 50px;
+	background-color: rgba(200, 193, 217, 0.50);
+}
+#cadastrar{
+	background-color: #C8C1D9;
+	color: #6C568C;
+	border: 0;
+	border-radius: 20px;
+
+	width: 10vw;
+	height: 5vh;
+}
+#cadastrar:hover{
+	background-color: #6C568C;
+	color: #F2ECE9;
+}
+#cadastrar:active{
+	background-color: rgb(57, 41, 82);
+	color: #F2ECE9;
+	height: 4vh;
+	width: 9vw;
+	margin-top: 3.5vh;
+}
+#logar{
+	background-color: #F2ECE9;
+	color: #453073;
+	border: 0;
+	border-radius: 20px;
+
+	width: 10vw;
+	height: 5vh;
+
+	margin-right: 1vw;
+}
+#logar:hover{
+	background-color: #453073;
+	color: #F2ECE9;
+}
+#logar:active{
+	background-color: rgb(57, 41, 82);
+	color: #F2ECE9;
+	height: 4vh;
+	width: 9vw;
+	margin-top: 3.5vh;
+}
+.nav{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 0.3vw;
+}
+.nav1{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 1.2vw;
+}
+.lima{
+	margin-left: 1vw;
+	width: 1.5vw;
+	height: auto;
+}
+.lima1{
+	margin-left: 1vw;
+	width: 1.5vw;
+	height: auto;
+}
+.lima:hover{
+	width: 2vw;
+	height: auto;
+}
+.lima1:hover{
+	width: 2vw;
+	height: auto;
+}
